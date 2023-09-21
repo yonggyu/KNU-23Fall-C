@@ -14,7 +14,7 @@ int main(void)
 
     srand(time(NULL));
 
-    while (count < 100000) {
+    while (count < 10000) {
         x = (double) rand() / (double) RAND_MAX;
         y = (double) rand() / (double) RAND_MAX;
         count++;
@@ -23,9 +23,13 @@ int main(void)
                 circle++;
         }
 
-        percent = count / 1000;
+        percent = count / 100;
 
         printf("%d%%진행.. 원주율 : %lf ", percent, (circle / count) * 4);
+        for(int i = 0; i < percent; i += 5)
+        {
+            printf("=");
+        }
         printf("\n");
 
     }
