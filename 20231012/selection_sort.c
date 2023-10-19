@@ -42,7 +42,7 @@ void sort(void)
         swap(&arr[i], &arr[index]);
     }
 
-      for(int k = 0; k < 5; k++)
+    for(int k = 0; k < 5; k++)
     {
         printf("%d ", arr[k]);
     }
